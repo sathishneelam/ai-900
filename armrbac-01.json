@@ -1,0 +1,17 @@
+{
+    "Name": "01 Lab Instructions Custom RBAC",
+    "Id": null,
+    "IsCustom": true,
+    "Description": "01 Lab Instructions Custom RBAC",
+    "Actions": [
+      "Microsoft.Authorization/*/read",
+      "Microsoft.CognitiveServices/accounts/read",
+      "Microsoft.CognitiveServices/accounts/write",
+      "Microsoft.CognitiveServices/accounts/delete",
+      "Microsoft.CognitiveServices/accounts/listKeys/action",
+      "Microsoft.CognitiveServices/accounts/regenerateKey/action"
+    ],
+    "NotActions": [
+  
+    ]
+  }
