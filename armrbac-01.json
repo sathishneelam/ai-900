@@ -9,6 +9,7 @@
       "Microsoft.CognitiveServices/accounts/write",
       "Microsoft.CognitiveServices/accounts/delete",
       "Microsoft.CognitiveServices/accounts/listKeys/action",
+      "Microsoft.Resources/deployments/*",
       "Microsoft.CognitiveServices/accounts/regenerateKey/action"
     ],
     "NotActions": [
