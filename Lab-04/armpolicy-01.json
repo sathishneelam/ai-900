@@ -1,0 +1,24 @@
+{
+    "if": {
+      "anyOf": [
+        {
+          "not": {
+            "anyOf": [
+              {
+                "field": "type",
+                "like": "Microsoft.CognitiveServices/accounts"
+              },
+              {
+                "field": "type",
+                "in": [ "Microsoft.CognitiveServices/accounts" ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  }
+  
