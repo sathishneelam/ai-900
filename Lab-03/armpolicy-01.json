@@ -1,0 +1,37 @@
+{
+    "if": {
+      "anyOf": [
+        {
+          "not": {
+            "anyOf": [
+              {
+                "field": "type",
+                "like": "Microsoft.CognitiveServices/accounts"
+              },
+              {
+                "field": "type",
+                "in": [ "Microsoft.CognitiveServices/accounts" ]
+              }
+            ]
+          }
+        },
+        {
+          "allof": [
+            {
+              "field": "type",
+              "equals": "Microsoft.CognitiveServices/accounts"
+            },
+            {
+              "not": {
+                "field": "Microsoft.CognitiveServices/accounts/sku.name",
+                "in": [ "F0" ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  }

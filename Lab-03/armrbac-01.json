@@ -1,0 +1,41 @@
+{
+    "Name": "03 Lab Instructions Custom RBAC",
+    "Id": null,
+    "IsCustom": true,
+    "Description": "03 Lab Instructions Custom RBAC",
+    "Actions": [
+      "Microsoft.Authorization/*/read",
+      "Microsoft.CognitiveServices/accounts/read",
+      "Microsoft.CognitiveServices/accounts/write",
+      "Microsoft.CognitiveServices/accounts/delete",
+      "Microsoft.CognitiveServices/accounts/listKeys/action",
+      "Microsoft.Resources/deployments/*",
+      "Microsoft.CognitiveServices/accounts/regenerateKey/action"
+    ],
+    "notActions": [],
+    "dataActions": [
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision/classify/iterations/image/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision/classify/iterations/url/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/images/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/tags/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/delete",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/read",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/train/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/write",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/import/action",
+        "Microsoft.CognitiveServices/accounts/ComputerVision/ocr/action",
+        "Microsoft.CognitiveServices/accounts/ComputerVision/detect/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision/detect/iterations/image/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision/detect/iterations/url/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision/detect/iterations/image/nostore/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision.Prediction/detect/iterations/image/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision.Prediction/detect/iterations/url/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision/detect/iterations/url/nostore/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision.Prediction/detect/iterations/image/nostore/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision.Prediction/detect/iterations/url/nostore/action"
+    ],
+    "NotActions": [
+  
+    ]
+  }
