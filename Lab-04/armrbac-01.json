@@ -5,38 +5,9 @@
     "Description": "03 Lab Instructions Custom RBAC",
     "Actions": [
       "Microsoft.Authorization/*/read",
-      "Microsoft.CognitiveServices/accounts/read",
-      "Microsoft.CognitiveServices/accounts/write",
-      "Microsoft.CognitiveServices/accounts/delete",
-      "Microsoft.CognitiveServices/accounts/listKeys/action",
+      "Microsoft.CognitiveServices/accounts/*",
       "Microsoft.Resources/deployments/*",
-      "Microsoft.CognitiveServices/accounts/regenerateKey/action"
-    ],
-    "notActions": [],
-    "dataActions": [
-        "Microsoft.CognitiveServices/accounts/CustomVision/projects/action",
-        "Microsoft.CognitiveServices/accounts/CustomVision/projects/images/action",
-        "Microsoft.CognitiveServices/accounts/CustomVision/projects/tags/action",
-        "Microsoft.CognitiveServices/accounts/CustomVision/projects/delete",
-        "Microsoft.CognitiveServices/accounts/CustomVision/projects/read",
-        "Microsoft.CognitiveServices/accounts/CustomVision/projects/train/action",
-        "Microsoft.CognitiveServices/accounts/CustomVision/projects/write",
-        "Microsoft.CognitiveServices/accounts/CustomVision/projects/import/action",
-        "Microsoft.CognitiveServices/accounts/Face/detect/action",
-        "Microsoft.CognitiveServices/accounts/Face/findsimilars/action",
-        "Microsoft.CognitiveServices/accounts/Face/group/action",
-        "Microsoft.CognitiveServices/accounts/Face/identify/action",
-        "Microsoft.CognitiveServices/accounts/Face/verify/action",
-        "Microsoft.CognitiveServices/accounts/Face/facelists/write",
-        "Microsoft.CognitiveServices/accounts/Face/facelists/delete",
-        "Microsoft.CognitiveServices/accounts/Face/facelists/read",
-        "Microsoft.CognitiveServices/accounts/Face/facelists/persistedfaces/write",
-        "Microsoft.CognitiveServices/accounts/Face/facelists/persistedfaces/delete",
-        "Microsoft.CognitiveServices/accounts/Face/largepersongroups/persons/persistedfaces/write",
-        "Microsoft.CognitiveServices/accounts/Face/largepersongroups/persons/persistedfaces/delete",
-        "Microsoft.CognitiveServices/accounts/Face/largepersongroups/persons/persistedfaces/read",
-        "Microsoft.CognitiveServices/accounts/Face/largepersongroups/training/read",
-        "Microsoft.CognitiveServices/accounts/Face/largefacelists/persistedfaces/write"
+      "Microsoft.Resources/subscriptions/resourceGroups/read"
     ],
     "NotActions": [
   
