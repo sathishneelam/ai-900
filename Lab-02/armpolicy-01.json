@@ -24,7 +24,7 @@
             {
               "not": {
                 "field": "Microsoft.CognitiveServices/accounts/sku.name",
-                "in": [ "S0" ]
+                "in": [ "F0" ]
               }
             }
           ]
