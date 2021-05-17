@@ -1,0 +1,71 @@
+{
+    "if": {
+      "anyOf": [
+        {
+          "not": {
+            "anyOf": [
+              {
+                "field": "type",
+                "like": "Microsoft.CognitiveServices"
+              },
+              {
+                "field": "type",
+                "like": "Microsoft.Web/Sites"
+              },
+              {
+                "field": "type",
+                "like": "Microsoft.Web/serverfarms"
+              },
+              {
+                "field": "type",
+                "like": "Microsoft.Search/searchServices"
+              },
+              {
+                "field": "type",
+                "like": "Microsoft.BotService/botServices"
+              },
+              {
+                "field": "type",
+                "like": "Microsoft.Storage/storageAccounts"
+              },
+              {
+                "field": "type",
+                "in": [ "Microsoft.CognitiveServices/accounts", "Microsoft.Web/Sites", "Microsoft.Web/serverfarms", "Microsoft.Search/searchServices", "Microsoft.BotService/botServices", "Microsoft.Storage/storageAccounts" ]
+              }
+            ]
+          }
+        },
+        {
+          "allof": [
+            {
+              "field": "type",
+              "equals": "Microsoft.CognitiveServices/accounts"
+            },
+            {
+              "not": {
+                "field": "Microsoft.CognitiveServices/accounts/sku.name",
+                "in": [ "F0" ]
+              }
+            }
+          ]
+        },
+        {
+          "allof": [
+            {
+              "field": "type",
+              "equals": "Microsoft.Web/serverfarms"
+            },
+            {
+              "not": {
+                "field": "Microsoft.Web/serverfarms/sku.name",
+                "in": [ "S1" ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  }
